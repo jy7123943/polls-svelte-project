@@ -9,7 +9,7 @@
       <PollDetails {poll} />
     </div>
   {:else}
-    <div>Empty polls</div>
+    <div class='empty'>Empty polls</div>
   {/each}
 </div>
 
@@ -18,5 +18,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+  }
+  .empty {
+    color: #aaa;
+    font-size: 18px;
+    font-style: italic;
   }
 </style>
