@@ -1,30 +1,19 @@
 <script>
-	export let name;
+	import Header from './components/Header.svelte';
+	import Footer from './components/Footer.svelte';
 </script>
 
+<Header />
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<p>
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis soluta temporibus earum consequuntur quod, perferendis vero itaque aperiam accusamus, assumenda quaerat, porro quasi omnis! Iure porro provident sed commodi suscipit.
+	</p>
 </main>
+<Footer />
 
 <style>
 	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
+		max-width: 960px;
+		margin: 40px auto;
 	}
 </style>
