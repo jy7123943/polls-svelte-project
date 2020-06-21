@@ -13,8 +13,7 @@
 		activeItem = detail;
 	};
 
-	const handleAdd = ({ detail }) => {
-		polls = [detail, ...polls];
+	const handleAdd = () => {
 		activeItem = items[0];
 	};
 
